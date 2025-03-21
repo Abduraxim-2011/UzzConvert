@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UzzConvert</title>
+    <!-- webga logo qoyish -->
+    <link rel="icon" type="image/png" href="./Logo-Photoroom.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- webga logo qoyish -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img class="logo" src="./Logo-Photoroom.png" alt="">
+    </header>
+    <div class="box">
+        <h1>
+            <div class="flex">
+            <img src="./Logo-Photoroom.png" class="logo2" alt="">Valyuta konvertatsiyasi <img src="./Logo-Photoroom.png" alt="" class="logo2"> 
+
+            </div>
+        </h1>
+        <select name="" id="select1">
+            <option value="USD">$ USD</option>
+<option value="EUR">€ EUR</option>
+<option value="JPY">¥ JPY</option>
+<option value="GBP">£ GBP</option>
+<option value="AUD">A$ AUD</option>
+<option value="CAD">C$ CAD</option>
+<option value="CHF">CHF CHF</option>
+<option value="CNY">¥ CNY</option>
+<option value="SEK">kr SEK</option>
+<option value="NZD">NZ$ NZD</option>
+<option value="MXN">MX$ MXN</option>
+<option value="SGD">S$ SGD</option>
+<option value="HKD">HK$ HKD</option>
+<option value="NOK">kr NOK</option>
+<option value="KRW">₩ KRW</option>
+<option value="TRY">₺ TRY</option>
+<option value="RUB">₽ RUB</option>
+<option value="INR">₹ INR</option>
+<option value="BRL">R$ BRL</option>
+<option value="ZAR">R ZAR</option>
+<option value="KZT">₸ KZT</option>
+<option value="UAH">₴ UAH</option>
+<option value="AED">د.إ AED</option>
+<option value="SAR">﷼ SAR</option>
+<option value="IDR">Rp IDR</option>
+<option value="THB">฿ THB</option>
+<option value="PLN">zł PLN</option>
+<option value="MYR">RM MYR</option>
+<option value="EGP">E£ EGP</option>
+<option value="PKR">₨ PKR</option>
+
+        </select>
+    <select name="" id="select2">
+<option value="UZS">& UZS</option>
+            <option value="USD">$ USD</option>
+<option value="EUR">€ EUR</option>
+<option value="JPY">¥ JPY</option>
+<option value="GBP">£ GBP</option>
+<option value="AUD">A$ AUD</option>
+<option value="CAD">C$ CAD</option>
+<option value="CHF">CHF CHF</option>
+<option value="CNY">¥ CNY</option>
+<option value="SEK">kr SEK</option>
+<option value="NZD">NZ$ NZD</option>
+<option value="MXN">MX$ MXN</option>
+<option value="SGD">S$ SGD</option>
+<option value="HKD">HK$ HKD</option>
+<option value="NOK">kr NOK</option>
+<option value="KRW">₩ KRW</option>
+<option value="TRY">₺ TRY</option>
+<option value="RUB">₽ RUB</option>
+<option value="INR">₹ INR</option>
+<option value="BRL">R$ BRL</option>
+<option value="ZAR">R ZAR</option>
+<option value="UZS">so'm UZS</option>
+<option value="KZT">₸ KZT</option>
+<option value="UAH">₴ UAH</option>
+<option value="AED">د.إ AED</option>
+<option value="SAR">﷼ SAR</option>
+<option value="IDR">Rp IDR</option>
+<option value="THB">฿ THB</option>
+<option value="PLN">zł PLN</option>
+<option value="MYR">RM MYR</option>
+<option value="EGP">E£ EGP</option>
+<option value="PKR">₨ PKR</option>
+
+    
+    </select>
+    <br>
+    <br>
+    <input placeholder="Summani kiriting" type="number" id="input1" >
+    <br>
+    <br>
+    <button onclick="convert()" id="myButton">Almashtrish</button>
+    <p id="result"><i class="fa-solid fa-money-bill-transfer"></i></p>
+    </div>
+    
+
+<script>
+    let button = document.getElementById("myButton");
+
+    button.addEventListener("click", function() {
+        button.style.transform = "scale(0.9)"; // Tugmani bosilganda kichraytirish
+        setTimeout(() => {
+            button.style.transform = "scale(1)"; // 0.5s dan keyin yana qaytarish
+        }, 800);
+    });
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Animation</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+        }
+        .symbol {
+            position: absolute;
+            font-size: 30px;
+            color: rgb(58, 128, 0);
+            font-weight: bold;
+            animation: fall linear infinite;
+            z-index: 1;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-10vh); opacity: 1; }
+            100% { transform: translateY(110vh); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const symbols = ['💲','₽', '¥','£','₹'];
+        function createSymbol() {
+            const symbol = document.createElement('div');
+            symbol.classList.add('symbol');
+            symbol.innerText = symbols[Math.floor(Math.random() * symbols.length)];
+            document.body.appendChild(symbol);
+            
+            symbol.style.left = Math.random() * 100 + 'vw';
+            symbol.style.top = '-10vh';
+            symbol.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            
+            setTimeout(() => {
+                symbol.remove();
+            }, 5000);
+        }
+        setInterval(createSymbol,  500);
+    </script>
+</body>
+</html>
+
+    <script src="./index.js"></script>
+    <script src="./select.js"></script>
+</body>
+</html>

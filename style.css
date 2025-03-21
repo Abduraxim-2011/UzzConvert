@@ -1,0 +1,164 @@
+body{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    color: rgb(58, 128, 0);
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.box{
+    z-index: 2;
+
+margin: 0 auto;
+margin-top: 30px;
+padding: 50px;
+width: 400px;
+background-color: #fff;
+box-shadow:  0px 0px 10px 0px rgb(143, 142, 142);
+
+height: 400px;
+    border-radius: 20px ;
+    border: 2px solid rgb(206, 206, 206) ;
+}
+.logo2{
+    width: 30px ;
+    height: 30px;
+}
+select{
+    color: rgb(58, 128, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #ffffff;
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+option{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    
+}
+input{
+    color: rgb(58, 128, 0);
+    outline: none;
+    border: none;
+background-color: ;
+box-shadow:  0px 0px 10px 0px rgb(143, 142, 142);
+border-radius: 10px;
+background-color: rgb(233, 239, 244);
+    padding: 20px 50px;
+    transition: 0.5s;
+}
+input:focus{
+    box-shadow:  0px 0px 10px 0px rgb(58, 128, 0);
+background-color: rgb(255, 255, 255);
+}
+button{
+    padding: 20px 86px;
+    border: none;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+transition:   0.8s;
+box-shadow:  0px 10px 10px 0px rgb(100, 99, 99);
+
+
+}
+button:focus{
+    box-shadow:  0px 0px 10px 10px rgb(194, 194, 194);
+transition:   0.8s;
+
+}
+p{
+    font-size: 16px;
+    background-color: #fff;
+    padding: 20px 10px;
+    width: 240px;
+    text-decoration: aqua;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid  rgb(58, 128, 0);
+    background-color: #fff;
+    box-shadow:  0px 0px 10px 0px rgb(143, 142, 142);
+}
+p i{
+    color:rgb(58, 128, 0) ;
+    font-size: 22px;
+}
+
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 30px;
+    }
+
+    input {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    select {
+        width: 100%;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    p {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .box {
+        width: 80%;
+        padding: 20px;
+    }
+
+    input {
+        margin:0 auto;
+        padding: 20px ;
+width: 85%;
+    }
+
+    button {
+        padding: 20px 5px;
+transition: all 0.3s;
+    }
+
+    p {
+        width: 95%;
+        font-size: 18px;
+        padding: 20px 5px;
+        color: rgb(58, 128, 0);
+    }
+    select{
+margin-top: 10px;
+    }
+}
